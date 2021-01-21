@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Custom module styles.
+ *
+ * @author    Yurii Huriianov <yuhur1985@gmail.com>
+ * @copyright 2020
+ */
+-->
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
+    <title>Custom</title>
+    <parent>Magento/luma</parent>
+    <media>
+        <preview_image>media/preview.png</preview_image>
+    </media>
+</theme>

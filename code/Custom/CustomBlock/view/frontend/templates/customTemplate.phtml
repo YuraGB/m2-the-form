@@ -1,0 +1,28 @@
+<!--
+/**
+ * Custom template.
+ *
+ * @author    Yurii Huriianov <yuhur1985@gmail.com>
+ * @copyright 2020
+ */
+-->
+
+<div data-bind="scope: 'theForm'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+{
+     "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "theForm": {
+                        "component": "Custom_CustomBlock/js/viewModel",
+                        "config": {
+                            "template": "Custom_CustomBlock/template"
+                        }
+                    }
+                }
+            }
+     }
+}
+</script>

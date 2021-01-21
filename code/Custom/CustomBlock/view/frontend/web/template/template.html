@@ -1,0 +1,79 @@
+<!--
+/**
+ * Custom module template.
+ *
+ * @author    Yurii Huriianov <yuhur1985@gmail.com>
+ * @copyright 2020
+ */
+-->
+
+<form action="#" id="custom-form" data-mage-init='{"validation":{}}' data-bind="submit:formValid">
+    <fieldset class="fieldset"  data-bind="attr: {'data-hasrequired': $t('* Required Fields')}">
+        <legend class="legend"><span>Form title</span></legend><br />
+        <div class="field firstname required">
+            <label for="firstname" class="label">Name</label>
+            <div class="control">
+                <input
+                    type="text"
+                    name="firstname"
+                    required="true"
+                    id="firstname"
+                    data-bind="{attr: {'placeholder': 'Name'}, value: firstName}"
+                    data-validate="{required:true}" />
+            </div>
+        </div>
+        <div class="field email required">
+            <label for="email_address" class="label">Email</label>
+            <div class="control">
+                <input
+                    type="text"
+                    name="email"
+                    required="true"
+                    id="email_address"
+                    data-bind="{attr: {'placeholder': 'Email'}, value: email}"
+                    title="Email Address"
+                    data-validate="{required:true}"
+                    class="validate-email required-entry input-text" />
+            </div>
+        </div>
+        <div class="field telephone required">
+            <label for="telephone" class="label">Phone</label>
+            <div class="control">
+                <input
+                    type="tel"
+                    name="telephone"
+                    required="true"
+                    id="telephone"
+                    data-bind="{attr: {'placeholder': 'Phone'}, value: phone}"
+                    data-validate="{required:true, 'validate-number':true}"
+                    title="Telephone"
+                    class="input-text required-entry" />
+            </div>
+        </div>
+        <div class="field countries required">
+            <label for="countries" class="label">Countries</label>
+            <select id="countries"
+                    data-bind="options: country,
+                       optionsCaption: 'Choose...'"></select>
+        </div>
+        <div class="field choice required">
+            <label for="choice" class="label"><span>Checbox</span></label>
+            <div class="control">
+            <input
+                id="choice"
+                type="checkbox"
+                data-validate="{required:true}"
+                name="custom-terms"
+                class="checkbox">
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <button name="submit" class="action primary" type="submit" ><span>Submit</span></button>
+        <button name="clear"
+                class="action primary"
+                type="button"
+                data-bind="click: clear"
+        ><span>Clear</span></button>
+    </div>
+</form>

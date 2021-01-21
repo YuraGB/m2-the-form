@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Custom module Home Page template.
+ *
+ * @author    Yurii Huriianov <yuhur1985@gmail.com>
+ * @copyright 2020
+ */
+-->
+<page layout="custom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="test.work.form" template="Custom_CustomBlock::customTemplate.phtml"/>
+        </referenceContainer>
+    </body>
+    <referenceContainer name="footer" remove="true"/>
+</page>

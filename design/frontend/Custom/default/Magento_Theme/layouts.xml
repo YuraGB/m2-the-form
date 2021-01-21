@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Custom layout declaration.
+ *
+ * @author    Yurii Huriianov <yuhur1985@gmail.com>
+ * @copyright 2020
+ */
+-->
+<page_layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/PageLayout/etc/layouts.xsd">
+    <layout id="custom_layout">
+        <label translate="true">custom_layout</label>
+    </layout>
+</page_layouts>
